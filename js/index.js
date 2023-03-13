@@ -2,19 +2,22 @@
 
 
 
-    $("#nav").load("nav.html .nav-box");
+    
+    $("#nav").load("nav.html .nav-box", function () {
 
 
-    const list = document.querySelectorAll('.list');
-    function activeLink() {
-        list.forEach((item) =>
-            item.classList.remove('active'));
-        this.classList.add('active');
-    }
+        const loc = document.location.pathname.slice(1); const list = document.querySelectorAll('#nav .list');
 
-    list.forEach((item) =>
-        item.addEventListener('click', activeLink));
 
+        list.forEach((item) => {
+            const href = $(item).children('a').attr('href')
+            if (href === loc) {
+                item.classList.add('active');
+            }
+        })
+
+
+    });
 
 
 
