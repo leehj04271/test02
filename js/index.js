@@ -6,7 +6,9 @@
     $("#nav").load("nav.html .nav-box", function () {
 
 
-        const loc = document.location.pathname.slice(8); const list = document.querySelectorAll('#nav .list');
+        const loc = document.location.pathname.slice(8);
+        console.log(loc)
+        const list = document.querySelectorAll('#nav .list');
 
 
         list.forEach((item) => {
