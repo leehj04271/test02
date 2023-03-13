@@ -734,8 +734,6 @@ function insertData(arrivalDataArr) {
 
 }
 
-(function ($) {
-	$("#nav").load("nav.html .nav-box");
-})(jQuery);
+
 
 

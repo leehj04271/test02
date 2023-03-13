@@ -1,7 +1,7 @@
 (function($){
 
     
-    $("#nav").load("nav.html .nav-box");
+
 
     const line2 = [
         {

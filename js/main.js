@@ -1,6 +1,6 @@
 // map onload
 
-$("#nav").load("nav.html"); 
+
 window.onload = () => {
     
     $('#wrap').html(getHtmlText())
