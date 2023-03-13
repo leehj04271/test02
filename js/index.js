@@ -12,7 +12,10 @@
 
 
         list.forEach((item) => {
-            const href = $(item).children('a').attr('href')
+            let href = $(item).children('a').attr('href')
+            if(href.length===0){
+                href = 'index.html'
+            }
             if (href === loc) {
                 item.classList.add('active');
             }
